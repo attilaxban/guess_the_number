@@ -20,6 +20,7 @@ def guess_number_game(random_number=None):
 
     if user_input == random_number:
         print("You won!")
+        print(f"The number was: {random_number}")
         return True
 
     i = 0
@@ -28,6 +29,7 @@ def guess_number_game(random_number=None):
         i += 1
         if user_input == random_number and i < 3:
             print("You won!")
+            print(f"The number was: {random_number}")
             return True
         elif i == 2:
             print("You lost!")
