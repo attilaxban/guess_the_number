@@ -16,5 +16,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Run test
-        run: pytest
+      - name: Install pytest
+        run: apt install python3-pytest
+
+      - name: Run pytest
+        run: pytest      
